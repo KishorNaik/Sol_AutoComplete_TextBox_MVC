@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model Sol_AutoComplete_Box.TagHelpers.AutoCompleteTextBoxModel
+
+<div class="ui-widget form-group">
+
+    <label for="language"></label>
+    <input id="@Model.Id" type="text" class="form-control" />
+    <input id="hiddenSelectedValue" type="hidden" name="hiddenSelectedValue" value="" />
+</div>
+
+<script>
+
+    let id = '@Html.Raw(Model.Id)';
+    let itemSource = JSON.parse('@Html.Raw(Model.ItemSource)');
+    let minLength = '@Html.Raw(Model.MinLength)';
+
+    let rawId = "#" + id;
+
+    $(rawId).autocomplete({
+            source: itemSource,
+            minLength: minLength,
+            select: function (event, ui) {
+                $("#hiddenSelectedValue").val(ui.item.value);
+
+                console.log($("#hiddenSelectedValue").val());
+            }
+        });
+</script>

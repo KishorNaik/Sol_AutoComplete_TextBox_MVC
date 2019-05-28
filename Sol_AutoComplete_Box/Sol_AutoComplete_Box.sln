@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sol_AutoComplete_Box", "Sol_AutoComplete_Box\Sol_AutoComplete_Box.csproj", "{2B68B4C9-EBBB-45A7-8394-E7580DB7FF48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B68B4C9-EBBB-45A7-8394-E7580DB7FF48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B68B4C9-EBBB-45A7-8394-E7580DB7FF48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B68B4C9-EBBB-45A7-8394-E7580DB7FF48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B68B4C9-EBBB-45A7-8394-E7580DB7FF48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B798D01-2737-43BF-A920-8F2783B54CE1}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,31 @@
+﻿@model Sol_AutoComplete_Box.Models.LanguageModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<form id="frmMain" asp-controller="Demo" asp-action="OnSubmit">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12">
+                <jQuery-AutoComplete id="txtAutoCompleteBox" items-source="Languages" min-length="1"></jQuery-AutoComplete>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <input id="btnSubmit" type="submit" class="btn btn-primary" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                @if (ViewBag.SelectedLanguage != null)
+                {
+                    <h3>@ViewBag.SelectedLanguage</h3>
+                }
+            </div>
+        </div>
+    </div>
+</form>

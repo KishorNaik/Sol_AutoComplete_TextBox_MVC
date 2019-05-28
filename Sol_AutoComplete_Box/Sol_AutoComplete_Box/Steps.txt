@@ -1,0 +1,44 @@
+﻿Step 1:
+	Create a demo controller.
+
+Step 2:
+	Add a view page from Index Action
+
+Step 3:
+	Create a folder in solution as TagHelpers
+
+Step 4:
+	Add Jquery & Jquery UI Reference in Head Tag
+
+Step 5:
+	In TagHelper folder, create AutoComplete Textbox Model
+
+Step 6:
+	Add a AutoComplete Partial View in shared folder. make TextBox and Jquery AutoComplete TextBox javascript code
+
+Step 7:
+	Add a tag helper class.
+		Right Click on Folder->Add->NewItem->Asp.net Core->Web->Asp.net->Select Tag Helper Class Template.
+
+Step 8:
+	Install following package from nuget
+	Microsoft.AspNetCore.Razor.Runtime
+
+Step 9:
+	Tag Helper Code.
+
+Step 10:
+	Register Tag helper in _ViewImport
+
+Step 11:
+	Create a Language Model class in Model Folder
+
+Step 12;
+	In DemoController, add the code.
+
+Step 13:
+	Make Index Page
+
+Step 14:
+	Add Session Middleware in StartUp
+
